@@ -3,6 +3,7 @@
 @theme {
   --font-inter: "Inter", sans-serif;
   --font-space: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
 
   /* Dark mode colors (default) */
   --color-bg: #0B0F14;
@@ -13,6 +14,11 @@
   --color-text: #E6EDF3;
   --color-text2: #9DA7B3;
   --color-border: #263040;
+
+  /* Difficulty colors */
+  --color-easy: #22C55E;
+  --color-medium: #EAB308;
+  --color-hard: #EF4444;
 }
 
 html {
@@ -35,4 +41,32 @@ body {
   --color-text: #1A1F2B;
   --color-text2: #4A5568;
   --color-border: #DCE3ED;
+  --color-easy: #16A34A;
+  --color-medium: #CA8A04;
+  --color-hard: #DC2626;
+}
+
+/* Micro-interaction: card hover lift */
+.card-hover {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px -5px rgba(0, 0, 0, 0.15), 0 4px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+/* Button states */
+.btn-primary {
+  transition: filter 0.2s ease, transform 0.15s ease, opacity 0.2s ease;
+}
+.btn-primary:hover {
+  filter: brightness(1.1);
+}
+.btn-primary:active {
+  transform: scale(0.97);
+}
+.btn-primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  filter: none;
 }

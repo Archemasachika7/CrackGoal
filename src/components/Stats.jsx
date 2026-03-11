@@ -31,7 +31,7 @@ export default function Stats() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.5, delay: i * 0.15 }}
-              className="bg-card border border-border rounded-xl p-6 text-center"
+              className="bg-card border border-border rounded-xl p-6 text-center card-hover"
             >
               <stat.icon className="mx-auto mb-3 text-accent" size={28} />
               <p className="font-space text-2xl sm:text-3xl font-bold text-text mb-1">

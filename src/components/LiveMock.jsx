@@ -91,7 +91,7 @@ export default function LiveMock() {
             href="#"
             whileHover={{ scale: 1.04, y: -2 }}
             whileTap={{ scale: 0.98 }}
-            className="inline-block bg-accent text-white font-semibold px-7 py-3 rounded-lg text-sm"
+            className="inline-block bg-accent text-white font-semibold px-7 py-3 rounded-lg text-sm btn-primary"
           >
             Register for Live Mock
           </motion.a>

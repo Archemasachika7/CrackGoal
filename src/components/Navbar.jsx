@@ -4,6 +4,7 @@ import { Menu, X, Sun, Moon } from "lucide-react";
 import { useTheme } from "../context/ThemeContext";
 
 const navLinks = [
+  { label: "Practice", href: "#practice" },
   { label: "Features", href: "#features" },
   { label: "Live Tests", href: "#live-mock" },
   { label: "Pricing", href: "#pricing" },
@@ -66,7 +67,7 @@ export default function Navbar() {
             </a>
             <a
               href="#"
-              className="text-sm font-medium bg-accent text-white px-5 py-2 rounded-lg hover:opacity-90 transition-opacity"
+              className="text-sm font-medium bg-accent text-white px-5 py-2 rounded-lg hover:opacity-90 transition-opacity btn-primary"
             >
               Get Started
             </a>
@@ -122,7 +123,7 @@ export default function Navbar() {
               </a>
               <a
                 href="#"
-                className="text-center bg-accent text-white px-5 py-2.5 rounded-lg hover:opacity-90 transition-opacity font-medium"
+                className="text-center bg-accent text-white px-5 py-2.5 rounded-lg hover:opacity-90 transition-opacity font-medium btn-primary"
               >
                 Get Started
               </a>
