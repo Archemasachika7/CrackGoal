@@ -2,11 +2,11 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useTheme } from "../context/ThemeContext";
 
+// Initial countdown duration: 2 hours, 13 minutes, 45 seconds
+const INITIAL_COUNTDOWN_SECONDS = 2 * 3600 + 13 * 60 + 45;
+
 function useCountdown() {
-  const [timeLeft, setTimeLeft] = useState(() => {
-    // Set initial countdown to ~2h13m45s
-    return 2 * 3600 + 13 * 60 + 45;
-  });
+  const [timeLeft, setTimeLeft] = useState(INITIAL_COUNTDOWN_SECONDS);
 
   useEffect(() => {
     const interval = setInterval(() => {
