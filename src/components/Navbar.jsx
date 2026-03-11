@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Sun, Moon } from "lucide-react";
+import { Link } from "react-router-dom";
 import { useTheme } from "../context/ThemeContext";
 
 const navLinks = [
@@ -59,18 +60,18 @@ export default function Navbar() {
               {isDark ? <Sun size={18} /> : <Moon size={18} />}
             </button>
 
-            <a
-              href="#"
+            <Link
+              to="/auth"
               className="text-sm font-medium text-text2 hover:text-text transition-colors px-4 py-2"
             >
               Login
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="/auth"
               className="text-sm font-medium bg-accent text-white px-5 py-2 rounded-lg hover:opacity-90 transition-opacity btn-primary"
             >
               Get Started
-            </a>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -115,18 +116,20 @@ export default function Navbar() {
                 </a>
               ))}
               <hr className="border-border" />
-              <a
-                href="#"
+              <Link
+                to="/auth"
+                onClick={() => setMobileOpen(false)}
                 className="text-text2 hover:text-text transition-colors text-base font-medium"
               >
                 Login
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                to="/auth"
+                onClick={() => setMobileOpen(false)}
                 className="text-center bg-accent text-white px-5 py-2.5 rounded-lg hover:opacity-90 transition-opacity font-medium btn-primary"
               >
                 Get Started
-              </a>
+              </Link>
             </div>
           </motion.div>
         )}

@@ -5,12 +5,12 @@
   --font-space: "Space Grotesk", sans-serif;
   --font-mono: "JetBrains Mono", monospace;
 
-  /* Dark mode colors (default) */
+  /* Dark mode colors (default) — Golden / Green theme */
   --color-bg: #0B0F14;
   --color-surface: #121821;
   --color-card: #1B2430;
-  --color-accent: #3A86FF;
-  --color-accent2: #00C2A8;
+  --color-accent: #D4A843;
+  --color-accent2: #2ECC71;
   --color-text: #E6EDF3;
   --color-text2: #9DA7B3;
   --color-border: #263040;
@@ -33,14 +33,14 @@ body {
 
 /* Light mode overrides via data attribute */
 [data-theme="light"] {
-  --color-bg: #F6F8FB;
+  --color-bg: #FDFBF5;
   --color-surface: #FFFFFF;
-  --color-card: #F1F4F9;
-  --color-accent: #2F6DF6;
-  --color-accent2: #00A991;
+  --color-card: #FBF7ED;
+  --color-accent: #B8922D;
+  --color-accent2: #219A52;
   --color-text: #1A1F2B;
   --color-text2: #4A5568;
-  --color-border: #DCE3ED;
+  --color-border: #E8DFC8;
   --color-easy: #16A34A;
   --color-medium: #CA8A04;
   --color-hard: #DC2626;
