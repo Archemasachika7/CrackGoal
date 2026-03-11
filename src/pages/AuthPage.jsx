@@ -244,6 +244,8 @@ export default function AuthPage() {
                       value={name}
                       onChange={(e) => setName(e.target.value)}
                       placeholder="John Doe"
+                      required
+                      autoComplete="name"
                       className="w-full bg-card border border-border rounded-xl pl-10 pr-4 py-3 text-sm text-text placeholder:text-text2/50 focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent/30 transition-colors"
                     />
                   </div>
@@ -269,6 +271,8 @@ export default function AuthPage() {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="you@example.com"
+                    required
+                    autoComplete="email"
                     className="w-full bg-card border border-border rounded-xl pl-10 pr-4 py-3 text-sm text-text placeholder:text-text2/50 focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent/30 transition-colors"
                   />
                 </div>
@@ -293,6 +297,8 @@ export default function AuthPage() {
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                     placeholder="••••••••"
+                    required
+                    autoComplete={isLogin ? "current-password" : "new-password"}
                     className="w-full bg-card border border-border rounded-xl pl-10 pr-12 py-3 text-sm text-text placeholder:text-text2/50 focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent/30 transition-colors"
                   />
                   <button
