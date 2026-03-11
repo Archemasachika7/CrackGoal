@@ -36,11 +36,11 @@ export default function ParticleBackground() {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
       const dotColor = isDark
-        ? "rgba(58, 134, 255, 0.4)"
-        : "rgba(47, 109, 246, 0.25)";
+        ? "rgba(212, 168, 67, 0.4)"
+        : "rgba(184, 146, 45, 0.25)";
       const lineColor = isDark
-        ? "rgba(58, 134, 255, 0.08)"
-        : "rgba(47, 109, 246, 0.06)";
+        ? "rgba(212, 168, 67, 0.08)"
+        : "rgba(184, 146, 45, 0.06)";
 
       // Update and draw particles
       for (let i = 0; i < particles.length; i++) {

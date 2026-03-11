@@ -1,3 +1,4 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Stats from "./components/Stats";
@@ -8,8 +9,9 @@ import LiveMock from "./components/LiveMock";
 import Pricing from "./components/Pricing";
 import Leaderboard from "./components/Leaderboard";
 import Footer from "./components/Footer";
+import AuthPage from "./pages/AuthPage";
 
-export default function App() {
+function LandingPage() {
   return (
     <div className="min-h-screen bg-bg text-text">
       <Navbar />
@@ -23,5 +25,16 @@ export default function App() {
       <Leaderboard />
       <Footer />
     </div>
+  );
+}
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/auth" element={<AuthPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }

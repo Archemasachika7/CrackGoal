@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import ParticleBackground from "./ParticleBackground";
 
 function ExamMockup() {
@@ -89,14 +90,17 @@ export default function Hero() {
               mock tests, live competitions, and performance insights.
             </p>
             <div className="flex flex-wrap gap-4">
-              <motion.a
-                href="#"
+              <motion.div
                 whileHover={{ scale: 1.04, y: -2 }}
                 whileTap={{ scale: 0.98 }}
-                className="inline-block bg-accent text-white font-semibold px-7 py-3 rounded-lg text-base btn-primary"
               >
-                Start Free Mock
-              </motion.a>
+                <Link
+                  to="/auth"
+                  className="inline-block bg-accent text-white font-semibold px-7 py-3 rounded-lg text-base btn-primary"
+                >
+                  Start Free Mock
+                </Link>
+              </motion.div>
               <motion.a
                 href="#live-mock"
                 whileHover={{ scale: 1.04, y: -2 }}
